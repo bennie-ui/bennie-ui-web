@@ -1,5 +1,5 @@
 {
-  "name": "phoenix-ui",
+  "name": "phoenix-ui-web",
   "private": true,
   "sideEffects": false,
   "type": "module",
@@ -14,6 +14,10 @@
     "preview": "npm run build && wrangler pages dev",
     "cf-typegen": "wrangler types"
   },
+  "workspaces": [
+    "packages/phoenix-ui/libraries/*",
+    "packages/phoenix-ui/components/primitives/*"
+  ],
   "dependencies": {
     "@remix-run/cloudflare": "^2.8.1",
     "@remix-run/cloudflare-pages": "^2.8.1",
@@ -46,3 +50,4 @@
     "node": ">=18.0.0"
   }
 }
+

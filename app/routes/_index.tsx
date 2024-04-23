@@ -1,5 +1,5 @@
 import type { MetaFunction } from "@remix-run/cloudflare";
-
+import { Heading } from "@phoenix-ui/text";
 export const meta: MetaFunction = () => {
   return [
     { title: "New Remix App" },
@@ -13,7 +13,7 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>Welcome to Remix (with Vite and Cloudflare)</h1>
+      <Heading>Welcome to Remix (with Vite and Cloudflare)</Heading>
       <ul>
         <li>
           <a
