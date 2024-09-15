@@ -28,19 +28,15 @@ jobs:
           submodules: true
 
       - uses: oven-sh/setup-bun@v1
-
       - run: bun i
-
       - run: bun run build
-
       - run: ls -la
-
       - run: ls -la ./build/client
 
       - name: deploy
         uses: cloudflare/pages-action@v1
         with:
-          projectName: "phoenix-ui-web"
+          projectName: "bennie-ui-web"
           directory: "./build/client"
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

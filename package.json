@@ -1,5 +1,5 @@
 {
-  "name": "phoenix-ui-web",
+  "name": "bennie-ui-web",
   "private": true,
   "sideEffects": false,
   "type": "module",
@@ -15,8 +15,8 @@
     "cf-typegen": "wrangler types"
   },
   "workspaces": [
-    "packages/phoenix-ui/libraries/*",
-    "packages/phoenix-ui/components/primitives/*"
+    "packages/bennie-ui/libraries/*",
+    "packages/bennie-ui/components/primitives/*"
   ],
   "dependencies": {
     "@remix-run/cloudflare": "^2.8.1",
@@ -50,4 +50,3 @@
     "node": ">=18.0.0"
   }
 }
-
